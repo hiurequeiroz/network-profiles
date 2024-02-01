@@ -1,24 +1,30 @@
 config lime system
 	option deferable_reboot_uptime_s '654321' # reboot every 7.5 days 
 
+config lime network
+	option main_ipv4_address '10.1.128.0/16/17'
+	option anygw_dhcp_start '2562'
+	option anygw_dhcp_limit '30205'
+	option batadv_orig_interval '5000'
+
 config lime wifi		
-	option country 'KR'	
-	option ap_ssid 'PSP'
-	option apname_ssid 'PSP/%H'
-	option ieee80211s_mesh_id 'LiMe'
-
-config lime-wifi-band '2ghz' 
-	option channel '13'
-	option htmode 'HT40'
-	list modes 'ap'	
-	list modes 'apname'
-	list modes 'ieee80211s'
-	option distance '300'
-
+	option country 'BR'	
+	option ap_ssid 'LibremeshTestBed'
+	option apname_ssid 'LibremeshTestBed/%H'
+	option ieee80211s_mesh_id 'libremesh'
+	
 config lime-wifi-band '5ghz'
-	option channel '157'
-	option htmode 'VHT80'
+	option channel '52'
+	option htmode 'HT40'
 	list modes 'ieee80211s'
+	option distance '2000'
+	
+config lime-wifi-band '2ghz' 
+	option channel '3	'
+	option htmode 'HT40'
+	list modes 'ieee80211s'
+	list modes 'ap'
+	list modes 'apname'
 	option distance '1000'
 
 config net lan1onlymesh
