@@ -29,9 +29,9 @@ Third ethernet: mesh, connected to Router C (lan2)
 
 Fourth ethernet: client, local DNS server (lan3)
 
-IP: 
+IP: 10.1.217.246
 
-MAC: 
+MAC: 60:e3:27:52:d9:f6
 
 ## Router B
 
@@ -41,9 +41,9 @@ Profile: outdoor_sectorial_singleband
 
 First ethernet: mesh, connected to PoE and to Router A (lan1)
 
-IP: 
+IP: 10.1.240.66
 
-MAC: 
+MAC: 0c:80:63:ce:f0:42
 
 ## Router C
 
@@ -66,9 +66,9 @@ Profile: outdoor_omnidirectional_dualband
 First ethernet: unused, configured as default
 
 
-IPv4: 
+IPv4: 10.1.201.50
 
-MAC: 
+MAC: 9c:53:22:68:c9:32
 
 ## Router E
 
